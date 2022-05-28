@@ -1,0 +1,11 @@
+.footer-container{
+    height: 10px;
+    width: 100%;
+    border-top: 3px solid #162f4b;
+    position:absolute;
+    bottom:40px;
+    text-align: center;
+}
+.white-footer-border{
+    border-top: 3px solid white;
+}

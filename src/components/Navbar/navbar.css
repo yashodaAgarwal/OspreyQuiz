@@ -1,0 +1,41 @@
+.nav-container{
+    height: 80px;
+    width: 100%;
+    border-bottom: 3px solid #162f4b;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+.white-border{
+    border-bottom: 3px solid white;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+   
+}
+.logo-image{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 2px #162f4b;
+    margin-right: 10px;
+}
+.logo-text{
+    padding-left: 5px;
+    font:28px 'Roboto';
+    font-weight: 800;
+}
+.theme-icon{
+    font-size: 32px;
+    padding-right: 40px;
+}
+.dark{
+    color:white; 
+    background-color: #162f4b;
+}
+.light{
+    background-color:white; 
+   color: #162f4b;
+}

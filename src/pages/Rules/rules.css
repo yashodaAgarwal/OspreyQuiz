@@ -1,0 +1,30 @@
+.rules-page{
+    margin: 5rem 18rem; 
+    border-radius: 5px;
+}
+.border{
+    border:2px solid white
+}
+.dark-border{
+    border:2px solid #162f4b;
+}
+.rules-heading{
+    text-align: center;
+    font-size: 40px;
+}
+.rules{
+    font-size: 24px;
+    margin: 20px;
+}
+.rules li{
+    padding: 10px;
+}
+.rules-button{
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    margin-left: 48rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}

@@ -5,6 +5,7 @@
 .Homepage-title{
     text-align: center;
     padding-bottom: 1.5rem;
+    padding-top: 10px;
 }
 .category-container{
     display: flex;

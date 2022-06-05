@@ -5,11 +5,12 @@ import categoryReducer from "../reducer/categoryReducer";
 const CategoryContext = createContext(null);
 
 const CategoryProvider = ({ children }) => {
-  const [CategoryState, categoryDispatch] = useReducer(categoryReducer, {
+  const [State, Dispatch] = useReducer(categoryReducer, {
     categorydata: [],
+    userData:[]
   });
   return (
-    <CategoryContext.Provider value={{ CategoryState, categoryDispatch }}>
+    <CategoryContext.Provider value={{ State, Dispatch }}>
       {children}
     </CategoryContext.Provider>
   );

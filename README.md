@@ -12,7 +12,7 @@ The user can login as Test User to check the flow of the app. The test credentia
 
 <h2>Features</h2>
 <ul>
-  <li>Quizzes by Category<li>
+  <li>Quizzes by Category</li>
   <li>MCQ based Quiz Question Page</li>
   <li>Result Page with Answers & Score</li>
   <li>Rules Page for while attempting Quiz</li>

@@ -53,7 +53,7 @@ export function makeServer({ environment = "development" } = {}) {
       // categories routes (public)
       this.get("/categories", getAllCategoriesHandler.bind(this));
       this.get("/categories/:categoryId", getCategoryHandler.bind(this));
-
+      this.passthrough("https://opentdb.com/*");
  
     },
   });

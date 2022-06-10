@@ -8,20 +8,34 @@ import { v4 as uuid } from "uuid";
 export const categories = [
   {
     _id: uuid(),
-    categoryName: "fiction",
-    description:
-      "literature in the form of prose, especially novels, that describes imaginary events and people",
+    category: "books",
+    categoryName: "Books",
+    description: "Quizzes based on Books",
+    image:
+    "https://hips.hearstapps.com/hmg-prod/images/old-books-arranged-on-shelf-royalty-free-image-1572384534.jpg?crop=1.00xw:0.752xh;0,0.197xh&resize=1200:*"
   },
   {
     _id: uuid(),
-    categoryName: "non-fiction",
-    description:
-      "Non-fiction is writing that gives information or describes real events, rather than telling a story.",
+    category: "music",
+    categoryName: "Music",
+    description: "Quizzes based on Music",
+    image:
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtckKqHD-poXFjYKTCEXYuxevG7RnIkDueHQ&usqp=CAU",
   },
   {
     _id: uuid(),
-    categoryName: "horror",
-    description:
-      "Meant to cause discomfort and fear for both the character and readers, horror writers often make use of supernatural and paranormal elements in morbid stories that are sometimes a little too realistic.",
+    category: "sports",
+    categoryName: "Sports",
+    description: "Quizzes based on Sports",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOsoxEr7lDZc_RK-KlCG_3wWJHvmORSanqPQ&usqp=CAU",
+  },
+  {
+    _id: uuid(),
+    category: "tech",
+    categoryName: "Technology",
+    description: "Quizzes based on Tech",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPqSwXQE9onxwY__FyuOMjYKoM8AaCukPcDQ&usqp=CAU",
   },
 ];

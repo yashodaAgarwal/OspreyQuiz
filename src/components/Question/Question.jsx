@@ -38,7 +38,7 @@ const Question = ({
 
   const handleNext = () => {
     if (currQues > 4) {
-      navigate("/");
+      navigate("/result");
     } else if (selected) {
       setCurrQues(currQues + 1);
       setSelected();

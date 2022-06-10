@@ -38,7 +38,7 @@ const Question = ({
 
   const handleNext = () => {
     if (currQues > 4) {
-      navigate("/");
+      navigate("/result");
     } else if (selected) {
       setCurrQues(currQues + 1);
       setSelected();
@@ -97,7 +97,7 @@ const Question = ({
             style={{ width: 185 }}
             onClick={handleNext}
           >
-            {currQues > 5 ? "Submit" : "Next Question"}
+            {currQues > 4 ? "Submit" : "Next Question"}
           </Button>
         </div>
       </div>

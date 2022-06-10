@@ -6,12 +6,12 @@ import { CategoryCard, Footer, Navbar } from "../../components";
 
 const Homepage = () => {
   const { theme } = useTheme();
-  const { CategoryState, categoryDispatch } = useCategory();
+  const { State, Dispatch } = useCategory();
   useEffect(() => {
     (async () => {
       try {
         const response = await axios.get("/api/categories");
-        categoryDispatch({
+        Dispatch({
           type: "savedata",
           payload: response.data.categories,
         });
@@ -19,8 +19,8 @@ const Homepage = () => {
         console.log(error, "Could not load data");
       }
     })();
-  }, [categoryDispatch]);
-  console.log();
+  }, [Dispatch]);
+  
   return (
     <>
       <Navbar />
@@ -33,8 +33,8 @@ const Homepage = () => {
       >
         <h1 className="Homepage-title">Featured Categories</h1>
         <div className="category-container">
-          {CategoryState.categorydata.map((category) => (
-            <CategoryCard category={category} />
+          {State.categorydata.map((category) => (
+            <CategoryCard category={category} key={category._id} />
           ))}
         </div>
         <Footer />

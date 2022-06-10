@@ -3,9 +3,15 @@
     width: 100%;
     border-top: 3px solid #162f4b;
     position:absolute;
-    bottom:40px;
+    bottom:20px;
     text-align: center;
 }
 .white-footer-border{
     border-top: 3px solid white;
+}
+.icons{
+    padding-top: 20px;
+}
+.footer-text{
+    padding-top: 20px;
 }

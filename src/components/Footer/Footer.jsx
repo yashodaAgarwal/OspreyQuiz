@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div className={theme === "dark"? "footer-container white-footer-border dark":"footer-container light"}>
     <h3 className='footer-text'>Made with ❤️ by <strong>Yashoda Agarwal</strong></h3>
-    <div >
+    <div className='icons'>
       <RiGithubFill className='theme-icon' />
       <RiTwitterFill className='theme-icon' />
     </div>

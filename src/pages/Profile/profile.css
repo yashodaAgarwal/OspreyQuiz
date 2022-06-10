@@ -1,0 +1,10 @@
+.profile-icon{
+    height:100px;
+    width: 100px;
+    padding-top: 20px;
+}
+.profile-page{
+    margin: 2rem 35rem; 
+    border-radius: 5px;
+    text-align: center;
+}

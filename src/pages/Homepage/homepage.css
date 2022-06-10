@@ -1,6 +1,10 @@
 .homepage-container{
     padding-top: 5rem;
-    height:100vh
+    min-height:98.5vh;
+    display:flex;
+    flex-direction: column;
+
+    
 }
 .Homepage-title{
     text-align: center;
@@ -14,3 +18,10 @@
     justify-content: space-around;
     margin: 10px;
   }
+
+  @media only screen and (max-width: 400px) {
+    .homepage-container{
+    padding-top: 5rem;
+    min-height:150vh
+}
+}

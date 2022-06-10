@@ -1,7 +1,7 @@
 const categoryReducer = (state, action) => {
     switch (action.type) {
       case "savedata":
-        return { ...state, categorydata: action.payload, loading: false };
+        return { ...state, categorydata: action.payload};
       default:
         return state;
     }

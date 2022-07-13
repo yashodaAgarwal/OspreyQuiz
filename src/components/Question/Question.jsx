@@ -57,6 +57,7 @@ const Question = ({
           ...questions[currQues]?.incorrect_answers,
         ])
     );
+    // eslint-disable-next-line
   }, [currQues, questions]);
 
   return (

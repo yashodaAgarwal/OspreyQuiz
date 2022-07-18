@@ -31,9 +31,10 @@ const Question = ({
 
   const handleCheck = (i) => {
     setSelected(i);
+    setError(false)
     if (i === correct) {
     setScore(score + 1);
-    setError(false);}
+    }
   };
 
   const handleNext = () => {

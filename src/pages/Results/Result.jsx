@@ -7,11 +7,12 @@ import { useEffect } from "react";
 
 const Result = () => {
   const { theme } = useTheme();
-  const { score, questions,setQuestions,setCurrQues } = useCategory();
+  const { score, questions,setQuestions,setCurrQues,setScore } = useCategory();
 
   const refresh = ()=>{
     setCurrQues(0);
     setQuestions();
+    setScore(0);
   }
   useEffect(() => {
     window.scrollTo(0, 0);

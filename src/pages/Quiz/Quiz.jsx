@@ -17,6 +17,7 @@ const Quiz = () => {
         )
         setQuestions(getData.results)
     })();
+    // eslint-disable-next-line
   }, [category]);
   return (
     <>

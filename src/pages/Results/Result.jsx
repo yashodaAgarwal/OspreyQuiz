@@ -1,7 +1,8 @@
 import { useCategory, useTheme } from "../../context";
-import { Footer, Navbar } from "../../components";
+import { Navbar } from "../../components";
 import { Button } from "@material-ui/core";
 import "./result.css";
+import { Link } from "react-router-dom";
 
 const Result = () => {
   const { theme } = useTheme();
@@ -19,19 +20,20 @@ const Result = () => {
       >
         {" "}
         <span className="title">Final Score : {score}</span>
+        <Link to="/">
         <Button
           variant="contained"
           color="secondary"
           size="large"
           style={{ alignSelf: "center", marginTop: 20, marginBottom: 20 }}
-          href="/"
         >
           Go to homepage
         </Button>
+        </Link>
         <span className="title">Answers:</span>
         {questions.map((question) => (
           <>
-            <div className="singleQuestion">
+            <div className="singleQuestion singleResult">
               <div>{question.question}</div>
               <div className="options">
                 {question.incorrect_answers.map((i) => (

@@ -58,3 +58,11 @@
       color:#162f4b;
       font-weight: 600;
   }
+
+  @media only screen and (max-width: 768px) {
+    .login-container{
+        font-size: 14px;
+        width:15rem
+    }
+}
+

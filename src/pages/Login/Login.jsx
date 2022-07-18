@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Navbar } from "../../components";
 import { useTheme } from "../../context";
@@ -32,6 +32,10 @@ const Loginpage = () => {
         setIsError("");
       };
       const {email,password} = login;
+
+      useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
   return (
     <div>
        <Navbar />

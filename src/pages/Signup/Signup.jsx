@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Navbar } from "../../components";
 import { useTheme } from "../../context";
@@ -43,6 +43,11 @@ export default function Signup() {
       setIsError("please fill all the field");
     }
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
     <Navbar />

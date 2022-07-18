@@ -2,12 +2,22 @@ import { useCategory, useTheme } from "../../context";
 import { Navbar } from "../../components";
 import { Button } from "@material-ui/core";
 import "./result.css";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
+import { useEffect } from "react";
 
 const Result = () => {
   const { theme } = useTheme();
-  const { score, questions } = useCategory();
+  const { score, questions,setQuestions,setCurrQues } = useCategory();
 
+  const refresh = ()=>{
+    setCurrQues(0);
+    setQuestions();
+  }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  
   return (
     <>
       <Navbar />
@@ -26,10 +36,12 @@ const Result = () => {
           color="secondary"
           size="large"
           style={{ alignSelf: "center", marginTop: 20, marginBottom: 20 }}
+          onClick={refresh}
         >
           Go to homepage
         </Button>
         </Link>
+       
         <span className="title">Answers:</span>
         {questions.map((question) => (
           <>

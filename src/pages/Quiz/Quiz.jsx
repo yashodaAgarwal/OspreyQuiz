@@ -9,6 +9,8 @@ const Quiz = () => {
   const {category,categoryName,score, setScore,questions,setQuestions,currQues, setCurrQues} = useCategory();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+    
     (async () => {
       
         const getData = await fetch(`https://opentdb.com/api.php?amount=6${category && `&category=${category}`}&difficulty=medium&type=multiple`)
